@@ -1,0 +1,20 @@
+<html >
+<head>
+<meta charset="UTF-8" />
+<style>
+#text-to-convert{height:200px;margin-bottom:10px;width:100%}
+#conversion-result{min-height:480px;padding-bottom:20px;width:100%}
+#message-area{color:red;}
+</style>
+</head>
+<body>
+<textarea id="text-to-convert" placeholder="Coller le texte (données séparées par des points-virgules) ici" oninput="execute_conversion()"></textarea>
+<div id='message-area'></div>
+<p>
+<textarea id="conversion-result" onclick="select_result_content()"></textarea>
+<script src="js/txt2excel.js"></script>
+<script>
+/*testOnData();*/
+</script>
+</body>
+</html>
