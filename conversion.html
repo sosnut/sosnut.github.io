@@ -2,15 +2,19 @@
 <head>
 <meta charset="UTF-8" />
 <style>
-#text-to-convert{height:200px;margin-bottom:10px;width:100%}
-#conversion-result{min-height:480px;padding-bottom:20px;width:100%}
+body{font-family:sans-serif;font-size:11pt;margin:15px;}
+#text-to-convert{height:200px;margin-top:8px;margin-bottom:8px;width:100%}
+#conversion-result{min-height:390px;padding-bottom:8px;width:100%}
 #message-area{color:red;}
 </style>
 </head>
 <body>
+Copier-coller le contenu intégral d'un fichier de données (séparées par des points-virgules) dans le premier champ.<br/>
+Le deuxième champ contiendra les données remises dans l'ordre, qu'on peut copier-coller vers une feuille Excel.
 <textarea id="text-to-convert" placeholder="Coller le texte (données séparées par des points-virgules) ici" oninput="execute_conversion()"></textarea>
 <div id='message-area'></div>
 <p>
+Résultat:
 <textarea id="conversion-result" onclick="select_result_content()"></textarea>
 <script src="js/txt2excel.js"></script>
 <script>
